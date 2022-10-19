@@ -12,7 +12,7 @@ const AddPost = () => {
   const savePost = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:5000/posts`, {
+      await axios.post(`http://1.9.77.70:5000/posts`, {
         title,
         tag,
         content,

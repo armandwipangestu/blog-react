@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 shadow-sm">
-      <div class="container flex flex-wrap justify-between items-center mx-auto md:px-24 px-10">
+      <div class="container flex flex-wrap justify-between items-center mx-auto md:px-24 lg:px-1 px-3">
         <a href="" class="flex items-center">
           <img
             src="https://blog.armandwipangestu.my.id/assets/img/favicon/github.png"
@@ -55,14 +55,14 @@ const Navbar = () => {
             <input
               type="text"
               id="search-navbar"
-              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-full border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
             />
           </div>
           <button
             data-collapse-toggle="navbar-search"
             type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-full md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-search"
             aria-expanded="false"
           >
@@ -110,7 +110,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                class="block py-2 pr-4 pl-3 text-slate-800 rounded md:bg-transparent md:p-0 dark:text-slate-800"
+                class="block py-2 pr-4 pl-3 text-slate-800 rounded md:bg-transparent md:p-0 dark:text-white"
                 aria-current="page"
               >
                 Blog
