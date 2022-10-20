@@ -38,7 +38,7 @@ const PostList = () => {
           <Link to={`/add`}>
             <button
               type="button"
-              className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Create new post
             </button>
@@ -61,7 +61,7 @@ const PostList = () => {
                       src={post.thumbnail}
                       alt=""
                     />
-                    <div className="p-6 flex flex-col justify-start relative">
+                    <div className="px-4 py-6 md:p-6 flex flex-col justify-start relative">
                       <div className="mb-14">
                         <a href="/posts">
                           <h5 className="text-gray-900 dark:text-white text-xl font-medium mb-2">
@@ -109,7 +109,7 @@ const PostList = () => {
                   <a href="/posts">
                     <img className="rounded-t-lg" src={post.thumbnail} alt="" />
                   </a>
-                  <div className="p-5 mb-20">
+                  <div className="px-4 py-6 md:p-5 mb-20">
                     <a href="/posts">
                       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {post.title}
