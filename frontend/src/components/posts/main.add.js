@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../utilities/navbar";
-import PostList from "../posts/PostList";
+import AddPost from "./AddPost";
 
-const BlogHome = () => {
+const Add = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <PostList />
+      <AddPost />
     </React.Fragment>
   );
 };
 
-export default BlogHome;
+export default Add;
