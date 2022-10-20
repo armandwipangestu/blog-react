@@ -8,6 +8,7 @@ const Posts = db.define(
   {
     title: DataTypes.TEXT,
     tag: DataTypes.TEXT,
+    description: DataTypes.TEXT,
     content: DataTypes.TEXT,
     thumbnail: DataTypes.TEXT,
   },
