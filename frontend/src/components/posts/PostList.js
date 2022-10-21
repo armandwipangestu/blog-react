@@ -116,7 +116,7 @@ const PostList = () => {
                       </h5>
                     </a>
                     <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                      {post.content}
+                      {post.description}
                     </p>
                   </div>
                   <div className="inline-flex ml-4 mb-4 absolute bottom-0 left-0 md:px-2 md:py-2">
