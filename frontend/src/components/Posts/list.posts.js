@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark as farBookmark } from "@fortawesome/free-regular-svg-icons";
 
-const PostList = () => {
+const ListPost = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -12,21 +12,13 @@ const PostList = () => {
   }, []);
 
   const getPosts = async () => {
-    const response = await axios.get("http://1.9.77.70:5000/posts");
+    // const response = await axios.get("http://1.9.77.70:5000/posts");
+    const response = await axios.get("http://192.168.124.125:5000/posts");
     setPosts(response.data);
   };
 
-  // const deletePosts = async (id) => {
-  //   try {
-  //     await axios.delete(`http://1.9.77.70:5000/posts/${id}`);
-  //     getPosts();
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
   return (
-    <section id="posts" className="md:px-32 lg:px-28 px-5 mb-10 py-2.5">
+    <section id="list_posts" className="md:px-32 lg:px-28 px-5 mb-10 py-2.5">
       <div className="pt-5 mb-5">
         <h1 className="text-4xl text-start dark:text-white">
           Arman Spirit News Bandung
@@ -143,4 +135,4 @@ const PostList = () => {
   );
 };
 
-export default PostList;
+export default ListPost;

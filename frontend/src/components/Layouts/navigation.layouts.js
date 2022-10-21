@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navigation = () => {
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 shadow-sm">
       <div className="container flex flex-wrap justify-between items-center mx-auto md:px-24 lg:px-20 px-3">
@@ -128,4 +128,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navigation;
